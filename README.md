@@ -1,2 +1,2 @@
 # posterGrid-task
- Nomad Coders : CSS Layout 2w task #1
+ Nomad Coders : CSS Layout 2w task #2
