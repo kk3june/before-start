@@ -1,2 +1,2 @@
 # posterGrid-task
- Nomad Coders : CSS Layout 2w task #3
+ grid practice #3
