@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,700;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+}
+.column {
+  width: 33%;
+  height: 100%;
+}
+
+.header {
+  background-color: #ffce33;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px 40px 30px;
+  position: relative;
+}
+
+.search-bar {
+  width: 60%;
+  height: 40px;
+  position: absolute;
+  top: 55px;
+  left: 20%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 30px;
+}
+
+.search-bar input {
+  width: 100%;
+  border: none;
+  opacity: 0.3;
+  font-weight: 600;
+}
+
+.search-bar i {
+  margin: auto;
+  opacity: 0.3;
+}
+/*header end*/
+
+.bestseller {
+  display: flex;
+}
+
+.book-data {
+  padding-top: 5px;
+  margin-left: 10px;
+}
+
+.bestseller__header {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  width: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.bestseller__cover {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10px 20px 10px 0px;
+}
+
+.book-data {
+  width: 220px;
+  margin: 10px 0px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.book__title > h3,
+.book__author,
+.book__stars,
+.book__sort {
+  padding-bottom: 10px;
+}
+
+.book__title {
+  font-size: 25px;
+}
+
+.book__author {
+  opacity: 0.3;
+}
+
+.book__stars {
+  width: 95px;
+  height: 21px;
+  background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIIcon-sprite_2x-c5d99e3ff59fde7b73c3a6270cadf470da4d9f64._V2_.png);
+  background-size: 400px 900px;
+  background-repeat: no-repeat;
+  background-position: -5px -396px;
+}
+
+.book__sort {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sort {
+  width: 90px;
+  height: 30px;
+  background-color: #d3d3d3;
+  opacity: 0.7;
+  border-radius: 10px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 5px;
+}
+
+.book__btns {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book__mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ffce33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book__buy {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* bestseller end*/
+
+.rank-title {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  margin: 20px 0px 15px 0px;
+}
+
+.rank-lists {
+  width: 400px;
+  height: 170px;
+  overflow: hidden;
+  display: flex;
+}
+
+.rank__list img {
+  width: 90px;
+  height: 130px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.rank-stars {
+  width: 80px;
+  height: 18px;
+  background-position: -21px -368px;
+  background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIIcon-sprite_1x-003a05344e6a5263c945684c66748394b4cbb9a2._V2_.png);
+  background-size: 400px 900px;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+/* rank end*/
+
+.recommend {
+  display: flex;
+  width: 400px;
+}
+
+.recommend-title {
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+  margin: 15px 0px;
+}
+
+.recommend img {
+  width: 130px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.rcm__data {
+  margin-left: 30px;
+}
+
+.rcm__author {
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.rcm__author__bio {
+  font-family: "Titillium Web", sans-serif;
+  margin-top: 10px;
+  opacity: 0.3;
+}
+
+/* recommend end*/
