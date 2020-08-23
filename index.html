@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="screen onApp">
+      <div class="navbar">
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-search"></i>
+      </div>
+      <section class="who">
+        <div class="artist">
+          <img
+            src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/085/707/81085707_1531896805182_1_600x600.JPG"
+            alt=""
+          />
+          <h1 class="artist__name">청하</h1>
+          <h5 class="artist__genre">댄스 / 가요</h5>
+        </div>
+        <div class="btns">
+          <div class="shuffle">Shuffle</div>
+          <div class="like">
+            <i class="fas fa-heart"></i>
+            <span class="like__number">212,333</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="play-lists">
+        <div class="play-lists__list">
+          <img
+            src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/494/130/81494130_1594017964026_1_600x600.JPG"
+            alt=""
+          />
+          <div class="list__data">
+            <h5 class="list__singer">청하</h5>
+            <h6 class="list__song">Play(feat.창모)</h6>
+          </div>
+          <div class="option"><i class="fas fa-ellipsis-v"></i></div>
+        </div>
+        <div class="play-lists__list">
+          <img
+            src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/466/097/81466097_1591614448357_1_600x600.JPG"
+            alt=""
+          />
+          <div class="list__data">
+            <h5 class="list__singer">청하</h5>
+            <h6 class="list__song">Be Yourself.newwav</h6>
+          </div>
+          <div class="option"><i class="fas fa-ellipsis-v"></i></div>
+        </div>
+        <div class="play-lists__list">
+          <img
+            src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/143/295/81143295_1546410332404_1_600x600.JPG"
+            alt=""
+          />
+          <div class="list__data">
+            <h5 class="list__singer">청하</h5>
+            <h6 class="list__song">벌써 12시</h6>
+          </div>
+          <div class="option"><i class="fas fa-ellipsis-v"></i></div>
+        </div>
+        <div class="play-lists__list">
+          <img
+            src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/022/313/81022313_1516159148701_1_600x600.JPG"
+            alt=""
+          />
+          <div class="list__data">
+            <h5 class="list__singer">청하</h5>
+            <h6 class="list__song">Roller Coaster</h6>
+          </div>
+          <div class="option"><i class="fas fa-ellipsis-v"></i></div>
+        </div>
+      </section>
+      <section class="footer__ui">
+        <div class="footer__playing">
+          <h5 class="footer__singer">청하</h5>
+          <h6 class="footer__song">Love U</h6>
+        </div>
+        <div class="playing__control">
+          <i class="fas fa-step-backward"></i>
+          <i class="fas fa-pause"></i>
+          <i class="fas fa-step-forward"></i>
+        </div>
+      </section>
+    </div>
+
+    <div class="screen outApp">
+      <div class="navbar">
+        <i class="fas fa-arrow-left"></i><i class="fas fa-ellipsis-v"></i>
+      </div>
+
+      <section class="outApp__cover">
+        <img
+          src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/143/295/81143295_1546410332404_1_600x600.JPG"
+          alt=""
+        />
+        <div class="cover__title">벌써 12시</div>
+        <div class="cover__artist">청하</div>
+      </section>
+
+      <section class="play-bar">
+        <div class="play-bar__times">
+          <div class="time__now">1:56</div>
+          <div class="time__song">2:32</div>
+        </div>
+        <div class="playing-time">
+          <input type="range" value="60" />
+        </div>
+      </section>
+
+      <section class="outApp-controls">
+        <i class="side fas fa-sync-alt"></i>
+        <i class="fas fa-step-backward"></i>
+        <span class="playbtn">▶</span>
+        <i class="fas fa-step-forward"></i>
+        <i class="side fas fa-random"></i>
+      </section>
+    </div>
+  </body>
+</html>
