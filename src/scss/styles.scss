@@ -16,7 +16,6 @@ p {
 }
 
 main {
-  grid-column-start: 2;
   line-height: 1.6;
   width: 65%;
   margin: 0px auto;
@@ -52,8 +51,6 @@ main {
 }
 
 .products {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   .product {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -123,7 +120,7 @@ footer {
   width: 100%;
   background-color: #464646;
   color: white;
-  padding: 100px 0;
+  padding: 20px 0;
   .footer__top {
     width: 65%;
     margin: 0 auto;
@@ -131,6 +128,16 @@ footer {
     grid-template-columns: 1.2fr 1fr;
     span {
       font-size: 35px;
+      font-weight: 600;
+      ul {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        &:nth-child(1) {
+          padding-top: 150px;
+        }
+      }
     }
     ul {
       width: 100%;
