@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import "_variables";
+@import "_elements";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  height: 200vh;
+}
+
+a {
+  color: orange;
+  font-weight: 600;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 80px;
+  }
+  .logo {
+    place-self: center;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 80px;
+    font-size: 30px;
+    font-weight: 100;
+  }
+}
+
+main {
+  .hero {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .hero__image {
+      background-image: url("https://images.unsplash.com/photo-1560184897-67f4a3f9a7fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80");
+      background-size: cover;
+      background-position: center;
+    }
+    &:nth-child(2) .hero__image {
+      background-image: url("https://images.unsplash.com/photo-1537726235470-8504e3beef77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    }
+    &:nth-child(3) .hero__image {
+      background-image: url("https://images.unsplash.com/photo-1517705008128-361805f42e86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1579&q=80");
+    }
+    &:nth-child(4) .hero__image {
+      background-image: url("https://images.unsplash.com/photo-1571515475383-f49761b29c2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    }
+    .hero__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: $fontMedium;
+      padding: 50px 100px;
+      font-size: 45px;
+      font-weight: 800;
+      text-align: center;
+      line-height: 1.5;
+      span {
+        font-family: $font;
+        font-size: 15px;
+        margin-top: 30px;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+.about-us {
+  height: 60vh;
+  background-color: #efcb56;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 20%;
+  h4 {
+    font-family: $fontMedium;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+  .about__text {
+    font-family: $fontMedium;
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  span {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+}
+
+.gallery {
+  width: 100%;
+  height: 200vh;
+  display: grid;
+  gap: 5px;
+  .gallery__line {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    .gallery__img {
+      @extend %galleryImg;
+      background-image: url("https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80");
+      &:nth-child(2) {
+        background-image: url("https://images.unsplash.com/photo-1561677978-583a8c7a4b43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+      }
+    }
+    .long {
+      @extend %galleryImg;
+      background-image: url("https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+      grid-column: span 2;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 100vh;
+  background-color: #535851;
+  .footer-content {
+    width: 70%;
+    margin: 0 auto;
+    padding: 200px 0px;
+    display: flex;
+    .footer__column {
+      ul {
+        width: 100%;
+        margin-right: 130px;
+        font-size: 18px;
+        font-weight: 600;
+        color: gainsboro;
+        line-height: 1.8;
+        li {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .footer-info {
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
