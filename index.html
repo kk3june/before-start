@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://kit.fontawesome.com/7b2a51515c.js" crossorigin="anonymous"></script>
+    <script>
+        function clearText(thefield) {
+            if (thefield.defaultValue == thefield.value)
+                thefield.value = ""
+        }
+    </script>
+    <title>Jun's Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/images/logo.png" alt="">
+            <span class="logo_text">Web Developer</span>
+        </div>
+
+
+        <ul class="menu">
+            <li class="menu_item">
+                <a href="#aboutMe">About</a>
+            </li>
+            <li class="menu_item">
+                <a href="#skills">My Skills</a>
+            </li>
+            <li class="menu_item">
+                <a href="#projects">Work</a>
+            </li>
+            <li class="menu_item">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <div class="sns">
+            <i class="fab fa-twitter">
+                <a href="https://www.twitter.com/"></a>
+            </i>
+            <i class="fab fa-facebook-f">
+                <a href="https://www.facebook.com/"></a>
+            </i>
+            <i class="fab fa-instagram">
+                <a href="https://www.instagram.com/"></a>
+            </i>
+        </div>
+    </nav>
+
+    <main class="wrapper">
+        <section class="content">
+            <div class="greetingWrapper">
+                <section class="greeting">
+                    <div class="greetingImg">
+                        <!-- <img src="/images/main-character.webp" alt="Steve Jobs not me"> -->
+                    </div>
+                    <div class="greeting-text">
+                        <p class="pGreeting">Hi, there. I'm</p>
+                        <h1>Jun</h1>
+                        <p class="pGrettingText">
+                            A person who wanna be a front-end developer.
+                            I interested in make some changes for the world in the future.
+                        <div class="social">
+                            <button>
+                                <a href="">Resume</a> </button>
+                        </div>
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <section id="aboutMe">
+                <div class="aboutHeader">About Me</div>
+                <p class="aboutText">
+                    31 years old born in 1991.<br>
+                    I like to travel and watching youtube and do work out.
+                    nowadays, try to read more books.<br>
+                    I majored in economics and had work experiences at pharmaceutical company over 2 years as
+                    salesman.<br><br>
+                    I don't have any background to become a developer.<br>
+                    I just have passion for adventure.
+                </p>
+            </section>
+
+            <section id="skills">
+                <div class="skillsHeader">My Skills</div>
+                <div class="skillsBoard">
+                    <div class="cando">
+                        <div class="row">
+                            <div class="skillIcon">
+                                <img src="/images/html-icon.png" alt="">
+                                <div class="skillName">HTML</div>
+                            </div>
+                            <div class="skillIcon">
+                                <img src="/images/css-icon.png" alt="">
+                                <div class="skillName">CSS</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skillIcon">
+                                <img src="/images/js-icon.png" alt="">
+                                <div class="skillName">Javascript</div>
+                            </div>
+                            <div class="skillIcon">
+                                <img src="/images/git-icon.png" alt="">
+                                <div class="skillName">Git</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="willdo">
+                        <div class="row">
+                            <div class="skillIcon">
+                                <img src="/images/sass-icon.png" alt="">
+                                <div class="skillName">SASS</div>
+                            </div>
+                            <div class="skillIcon">
+                                <img src="/images/node-icon.png" alt="">
+                                <div class="skillName">Node</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="skillIcon">
+                                <img src="/images/react-icon.png" alt="">
+                                <div class="skillName">React</div>
+                            </div>
+                            <div class="skillIcon">
+                                <img src="/images/python-icon.png" alt="">
+                                <div class="skillName">Python</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects">
+
+            </section>
+            <section id="contact">
+                <div class="contactHeader">Contact</div>
+                <div class="contactWrapper">
+                    <p class="contactMsg">
+                        Get in touch<br>
+                        If you want to ask more things use the blow form.
+                    </p>
+                    <h3 class="formHeader">Contact Form</h3>
+                    <div class="contactForm">
+                        <form action="https://formspree.io/f/xknkzzvy" method="POST">
+                            <label class="name">
+                                <input type="text" name="_name" placeholder="Your name*">
+                            </label>
+                            <label class="email">
+                                <input type="email" name="_replyto" placeholder="Your Email*">
+                            </label>
+                            <label class="subject">
+                                <input type="text" name="_subject" placeholder="Subject* ">
+                            </label>
+                            <label class="msg">
+                                <textarea name="message" placeholder="Your message*"></textarea>
+                            </label>
+
+                            <!-- your other form fields go here -->
+
+                        </form>
+                        <button type="submit">Send</button>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

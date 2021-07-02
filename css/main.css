@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    box-sizing: border-box;
+    background-color: #181818;
+    height: 100vh;
+    width: 150px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.logo img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.logo_text {
+    font-size: 12px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu_item {
+    padding: 20px 0;
+}
+
+.menu_item:hover {
+    background-color: #494646;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.sns {
+    width: 100%;
+    height: 20px;
+    padding-bottom: 150px;
+    color: white;
+}
+
+.sns i {
+    padding: 0 5px;
+}
+
+.sns i:hover {
+    color: #494646;
+    cursor: pointer;
+    transition: 
+}
+
+.text-zone {
+    padding-left: 100px;
+}
+
+.wrapper {
+    position: relative;
+    left: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+.content {
+    width: 1000px;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.greetingWrapper {
+    margin: 0 auto;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    /* width: 1000px; */
+    height: 100vh;
+}
+
+
+.greetingImg {
+    background-image: url(/images/satya-nadella.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.greeting-text {
+    padding: 0px 40px;
+    width: 500px;
+}
+
+.pGreeting {
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 35px;
+    padding: 15px 0;
+}
+
+button {
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    padding: 10px 20px;
+    border-style: none;
+    font-size: 0.9rem;
+    border-radius: 40px;
+}
+
+
+/* about */
+.aboutHeader, .skillsHeader, .contactHeader {
+    display: block;
+    width: 100%;
+    padding-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.aboutText, .skillsBoard, .contactWrapper {
+    display: inline-block;
+    background-color: white;
+    padding: 48px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-bottom: 100px;
+}
+
+.skillsBoard {
+    display: flex;
+    padding: 0;
+    margin-bottom: 200px;
+}
+
+.cando, .willdo {
+    width: 50%;
+    height: 100%;
+    padding: 20px 40px;
+}
+
+.willdo {
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    border-radius: 0 20px 20px 0;
+}
+
+img {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+}
+
+.skillIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 10px 20px;
+}
+
+.skillName {
+    font-size: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* contact */
+.contactMsg {
+    text-align: center;
+}
+
+.contactWrapper input, textarea {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(4, 40px);
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-areas: 
+        "name name email email"
+        "subject subject subject subject"
+        "msg msg msg msg"
+        "msg msg msg msg";
+}
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.subject {
+    grid-area: subject;
+}
+
+.msg {
+    grid-area: msg;
+}
+
+input, textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #eee;
+}
+
+input::placeholder, textarea::placeholder {
+    color:#bcbcbc;
+}
