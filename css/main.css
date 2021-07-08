@@ -68,6 +68,23 @@ a {
     padding-left: 100px;
 }
 
+.display {
+    background-color: black;
+    position: absolute;
+    color: white;
+    height: 150px;
+    width: 200px;
+    left: 50%;
+    margin-top: 150px;
+    z-index:1;
+    text-align: center;
+    border-radius: 20px;;
+}
+
+.weather {
+    color: white;
+}
+
 .wrapper {
     position: relative;
     left: 150px;
@@ -77,6 +94,7 @@ a {
     overflow: hidden;
     background-color: whitesmoke;
 }
+
 
 .content {
     width: 1000px;
