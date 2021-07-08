@@ -96,7 +96,7 @@ a {
     margin: 0 auto;
 }
 
-.greeting {
+#greeting {
     display: flex;
     align-items: center;
     /* width: 1000px; */
@@ -247,3 +247,25 @@ input, textarea {
 input::placeholder, textarea::placeholder {
     color:#bcbcbc;
 }
+
+button {
+    cursor: pointer;
+}
+
+.arrowUp {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-color:rgb(245, 245, 245, 0.2);
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all 1s;
+}
+
+.visible {
+    opacity: 0;
+    transform: translateY(-5px); 
+}
+
+

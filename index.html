@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <script defer src="js/clock.js"></script>
+    <script defer src="js/button.js"></script>
     <script src="https://kit.fontawesome.com/7b2a51515c.js" crossorigin="anonymous"></script>
     <title>Jun's Portfolio</title>
 </head>
@@ -55,7 +56,7 @@
     <main class="wrapper">
         <section class="content">
             <div class="greetingWrapper">
-                <section class="greeting">
+                <section id="greeting">
                     <div class="greetingImg">
                         <img src="img/satya-nadella.jpg" alt="Satya Nadella not me">
                     </div>
@@ -171,9 +172,12 @@
                     </div>
                 </div>
             </section>
-
         </section>
 
+        <button class="arrowUp visible">
+            <span>Back to TOP</span>
+            <i class="far fa-arrow-alt-circle-up"></i>
+        </button>
     </main>
 
 </body>
