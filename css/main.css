@@ -24,6 +24,10 @@ nav {
     height: 100px;
 }
 
+.clock  h1{
+    font-size: 15px;
+}
+
 .logo_text {
     font-size: 12px;
 }
@@ -66,19 +70,6 @@ a {
 
 .text-zone {
     padding-left: 100px;
-}
-
-.display {
-    background-color: black;
-    position: absolute;
-    color: white;
-    height: 150px;
-    width: 200px;
-    left: 50%;
-    margin-top: 150px;
-    z-index:1;
-    text-align: center;
-    border-radius: 20px;;
 }
 
 .weather {

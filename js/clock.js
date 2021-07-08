@@ -1,5 +1,5 @@
-const displaySelector = document.querySelector(".display");
-const clockTitle = displaySelector.querySelector("h1");
+const clock = document.querySelector(".clock");
+const clockTitle = clock.querySelector("h1");
 
 function getTime() {
     const date = new Date();
