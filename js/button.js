@@ -5,10 +5,10 @@ document.addEventListener("scroll", () => {
     console.log(currentHeight);
 
     if (currentHeight < 450 ){
-        arrowUp.classList.add("visible");
+        arrowUp.classList.add("invisible");
         arrowUp.style.pointerEvents = "none";
     } else {
-        arrowUp.classList.remove("visible");
+        arrowUp.classList.remove("invisible");
         arrowUp.style.pointerEvents = "auto";
     }
 });

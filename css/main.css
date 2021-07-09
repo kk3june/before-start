@@ -263,7 +263,7 @@ button {
     transition: all 1s;
 }
 
-.visible {
+.invisible {
     opacity: 0;
     transform: translateY(-5px); 
 }
